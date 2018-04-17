@@ -74,7 +74,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		// get current hibernate session
 		Session currentSession = sessionFactory.getCurrentSession();
 
-		Query theQuery = null;
+		Query<Customer> theQuery = null;
 
 		//
 		// only search by name if theSearchName is not empty
